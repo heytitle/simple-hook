@@ -1,0 +1,3 @@
+repo_path: /Users/title/project/simple-app/
+commands:
+    - git pull --rebase
