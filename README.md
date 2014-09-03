@@ -1,11 +1,13 @@
 # Simple Hook
-The app extend `Plack::App::GitHub::WebHook`.
+The app intendedly extends `Plack::App::GitHub::WebHook` in order to simply set all things up  through a configuration file, no need to code anymore. :)
 
 ## Flow
 Github(POST) -> Plack::App::Github::WebHook -> shell commands
 ### Installation
-1. git clone 
-2. cpanm Dist::Zilla && dzil listdeps | cpanm
+```
+> git clone git@github.com:heytitle/simple-hook.git && cd simple-hook
+> cpanm Dist::Zilla && dzil listdeps | cpanm
+```
 
 ### Setting the App
 Please check web-hook.yaml
@@ -14,6 +16,7 @@ Please check web-hook.yaml
 
 ### Setting on Github
 Follow this instruction https://developer.github.com/webhooks/creating
+
 1. Make sure your payload url is correct and accessible from outside.
 2. `Content Type` should be `application/x-www-form-urlencoded`
 
