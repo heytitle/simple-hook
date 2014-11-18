@@ -10,7 +10,7 @@ Github(POST) -> Plack::App::Github::WebHook -> shell commands
 ```
 
 ### Setting the App
-Please check web-hook.yaml
+Please check `webhook.yaml`
 
 **NOTE:** All commands will be combined by `&&`
 
@@ -25,3 +25,4 @@ Start service
 ```
 plackup app.psgi
 ```
+**NOTE** `last-update.txt` will be updated everytime when new code is pushed.
